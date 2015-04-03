@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6FF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/templeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12°"
+            android:textSize="60dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/templeft"
+            android:layout_toRightOf="@+id/templeft"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/hum"
+                android:paddingTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="湿度"/>
+            <TextView
+                android:id="@+id/humdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hum"
+                android:layout_alignBottom="@+id/hum"
+                android:layout_marginLeft="5dp"
+                android:text="95"
+                android:textSize="10dp"/>
+            <TextView
+                android:id="@+id/mintemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hum"
+                android:text="5"/>
+            <TextView
+                android:id="@+id/maxtemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humdata"
+                android:layout_marginLeft="10dp"
+                android:layout_alignRight="@id/humdata"
+                android:layout_toRightOf="@+id/mintemp"
+                android:text="5"/>
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maxtemp"
+
+                />
+        </RelativeLayout>
+
+        </RelativeLayout>
+</RelativeLayout>
